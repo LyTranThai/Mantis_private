@@ -1,0 +1,180 @@
+{
+  "strategy": "strategy_1_metric_probing",
+  "hyperparameters": {
+    "store_dir": "D:\\Blank\\xmad_store",
+    "output_dir": "C:\\Users\\Admin\\Desktop\\SC203\\xmad_mantis\\results\\strategy_1_metric_probe",
+    "log_dir": "C:\\Users\\Admin\\Desktop\\SC203\\xmad_mantis\\logs",
+    "epochs": 25,
+    "batch_size": 256,
+    "margin": 0.3,
+    "scale": 16.0
+  },
+  "part1_official_benchmark": [
+    {
+      "Model": "Mantis v2 + MetricProbe (Strategy 1)",
+      "In-Domain ACC": 91.3,
+      "In-Domain EER": 8.784999999999998,
+      "Cross-Domain ACC": 90.40811620936131,
+      "Cross-Domain EER": 9.66105602951349
+    },
+    {
+      "Model": "Mantis v2 Baseline (Linear Probe)",
+      "In-Domain ACC": 89.27,
+      "In-Domain EER": 10.87,
+      "Cross-Domain ACC": 91.42,
+      "Cross-Domain EER": 8.67
+    },
+    {
+      "Model": "wav2vec 2.0 (Leader)",
+      "In-Domain ACC": 99.97,
+      "In-Domain EER": 0.01,
+      "Cross-Domain ACC": 89.07,
+      "Cross-Domain EER": 11.82
+    },
+    {
+      "Model": "ResNet-18",
+      "In-Domain ACC": 99.98,
+      "In-Domain EER": 0.01,
+      "Cross-Domain ACC": 87.87,
+      "Cross-Domain EER": 12.52
+    },
+    {
+      "Model": "AST",
+      "In-Domain ACC": 98.53,
+      "In-Domain EER": 1.35,
+      "Cross-Domain ACC": 81.61,
+      "Cross-Domain EER": 16.91
+    },
+    {
+      "Model": "SepTr",
+      "In-Domain ACC": 91.7,
+      "In-Domain EER": 22.05,
+      "Cross-Domain ACC": 72.67,
+      "Cross-Domain EER": 45.69
+    }
+  ],
+  "part2_per_language": [
+    {
+      "language": "en",
+      "train_samples": 2000,
+      "test_samples": 2000,
+      "accuracy": 56.25,
+      "roc_auc": 63.95759999999999,
+      "eer": 40.300000000000004
+    },
+    {
+      "language": "ru",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 51.7,
+      "roc_auc": 59.6259,
+      "eer": 44.85
+    },
+    {
+      "language": "ar",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 60.150000000000006,
+      "roc_auc": 78.8843,
+      "eer": 26.200000000000003
+    },
+    {
+      "language": "ro",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 87.15,
+      "roc_auc": 97.09775,
+      "eer": 7.849999999999999
+    },
+    {
+      "language": "de",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 65.14999999999999,
+      "roc_auc": 87.5019,
+      "eer": 17.900000000000002
+    },
+    {
+      "language": "zh",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 73.5,
+      "roc_auc": 82.2631,
+      "eer": 23.75
+    },
+    {
+      "language": "es",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 65.0,
+      "roc_auc": 72.4901,
+      "eer": 31.85
+    }
+  ],
+  "part3_loao_breakdown": [
+    {
+      "held_out_attack": "xtts_v2",
+      "train_samples": 10000,
+      "test_samples": 2000,
+      "accuracy": 60.3,
+      "roc_auc": 66.63759999999999,
+      "eer": 37.15
+    },
+    {
+      "held_out_attack": "vits+knn",
+      "train_samples": 10000,
+      "test_samples": 2000,
+      "accuracy": 88.1,
+      "roc_auc": 94.56585000000001,
+      "eer": 11.6
+    },
+    {
+      "held_out_attack": "vits+openvoice",
+      "train_samples": 10000,
+      "test_samples": 2000,
+      "accuracy": 83.89999999999999,
+      "roc_auc": 92.49635,
+      "eer": 15.850000000000003
+    },
+    {
+      "held_out_attack": "fairseq_knnvc",
+      "train_samples": 10000,
+      "test_samples": 2000,
+      "accuracy": 85.75,
+      "roc_auc": 93.476,
+      "eer": 14.350000000000001
+    },
+    {
+      "held_out_attack": "fairseq_freevc",
+      "train_samples": 10000,
+      "test_samples": 2000,
+      "accuracy": 87.8,
+      "roc_auc": 95.04085,
+      "eer": 12.35
+    },
+    {
+      "held_out_attack": "vits_freevc",
+      "train_samples": 10000,
+      "test_samples": 2000,
+      "accuracy": 86.0,
+      "roc_auc": 93.62545,
+      "eer": 13.450000000000001
+    },
+    {
+      "held_out_attack": "bark+freevc",
+      "train_samples": 10000,
+      "test_samples": 2000,
+      "accuracy": 82.19999999999999,
+      "roc_auc": 91.11465000000001,
+      "eer": 17.5
+    },
+    {
+      "held_out_attack": "vallex",
+      "train_samples": 10000,
+      "test_samples": 2000,
+      "accuracy": 43.2,
+      "roc_auc": 34.49685,
+      "eer": 60.5
+    }
+  ]
+}

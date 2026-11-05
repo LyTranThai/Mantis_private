@@ -1,0 +1,10 @@
+﻿venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+content/
+output_jpg.zip
+*.zip
+mantis/data/
+mantis/tests/Result/
+xmad_mantis/logs/

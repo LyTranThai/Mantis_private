@@ -1,0 +1,54 @@
+{
+  "benchmark": "XMAD-Bench (Common Voice English)",
+  "model": "paris-noah/MantisV2",
+  "num_samples_evaluated": 200,
+  "train_samples": 140,
+  "test_samples": 60,
+  "results": {
+    "logistic_regression": {
+      "accuracy": 1.0,
+      "roc_auc": 1.0,
+      "eer": 0.0,
+      "optimal_threshold": 0.9388699531555176
+    },
+    "random_forest": {
+      "accuracy": 0.9666666666666667,
+      "roc_auc": 1.0,
+      "eer": 0.0,
+      "optimal_threshold": 0.7133333333333334
+    },
+    "best_head": "Logistic Regression",
+    "best_classification_report": {
+      "Bonafide (Real)": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 30.0
+      },
+      "Spoof (Fake)": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 30.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 60.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 60.0
+      }
+    }
+  },
+  "artifacts": {
+    "confusion_matrix": "C:\\Users\\Admin\\Desktop\\SC203\\xmad_mantis\\results\\confusion_matrix.png",
+    "roc_curve": "C:\\Users\\Admin\\Desktop\\SC203\\xmad_mantis\\results\\roc_curve.png",
+    "log_file": "C:\\Users\\Admin\\Desktop\\SC203\\xmad_mantis\\logs\\benchmark_run.log"
+  }
+}

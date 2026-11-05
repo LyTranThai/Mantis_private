@@ -1,0 +1,295 @@
+{
+  "exp1_official_benchmark": [
+    {
+      "Model": "Mantis v2 (Ours)",
+      "In-Domain ACC": 89.27000000000001,
+      "In-Domain EER": 10.870000000000001,
+      "Cross-Domain ACC": 91.42264237952502,
+      "Cross-Domain EER": 8.66958727230805
+    },
+    {
+      "Model": "wav2vec 2.0 (Leader)",
+      "In-Domain ACC": 99.97,
+      "In-Domain EER": 0.01,
+      "Cross-Domain ACC": 89.07,
+      "Cross-Domain EER": 11.82
+    },
+    {
+      "Model": "ResNet-18",
+      "In-Domain ACC": 99.98,
+      "In-Domain EER": 0.01,
+      "Cross-Domain ACC": 87.87,
+      "Cross-Domain EER": 12.52
+    },
+    {
+      "Model": "AST",
+      "In-Domain ACC": 98.53,
+      "In-Domain EER": 1.35,
+      "Cross-Domain ACC": 81.61,
+      "Cross-Domain EER": 16.91
+    },
+    {
+      "Model": "SepTr",
+      "In-Domain ACC": 91.7,
+      "In-Domain EER": 22.05,
+      "Cross-Domain ACC": 72.67,
+      "Cross-Domain EER": 45.69
+    }
+  ],
+  "exp2_per_language": [
+    {
+      "language": "en",
+      "train_samples": 2000,
+      "test_samples": 2000,
+      "accuracy": 57.4,
+      "roc_auc": 69.40079999999999,
+      "eer": 37.0
+    },
+    {
+      "language": "ru",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 52.400000000000006,
+      "roc_auc": 66.016,
+      "eer": 39.65
+    },
+    {
+      "language": "ar",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 59.45,
+      "roc_auc": 86.3025,
+      "eer": 21.099999999999998
+    },
+    {
+      "language": "ro",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 85.5,
+      "roc_auc": 97.05269999999999,
+      "eer": 8.049999999999999
+    },
+    {
+      "language": "de",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 70.45,
+      "roc_auc": 89.98410000000001,
+      "eer": 15.050000000000002
+    },
+    {
+      "language": "zh",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 73.25,
+      "roc_auc": 82.15160000000002,
+      "eer": 23.65
+    },
+    {
+      "language": "es",
+      "train_samples": 4000,
+      "test_samples": 2000,
+      "accuracy": 68.89999999999999,
+      "roc_auc": 77.16390000000001,
+      "eer": 29.200000000000003
+    }
+  ],
+  "exp3_leave_one_attack_out": [
+    {
+      "held_out_attack": "xtts_v2",
+      "accuracy": 72.0,
+      "roc_auc": 83.24960000000002,
+      "eer": 24.2
+    },
+    {
+      "held_out_attack": "vits+knn",
+      "accuracy": 90.5,
+      "roc_auc": 95.3,
+      "eer": 10.299999999999997
+    },
+    {
+      "held_out_attack": "vits+openvoice",
+      "accuracy": 86.8,
+      "roc_auc": 93.58599999999998,
+      "eer": 13.3
+    },
+    {
+      "held_out_attack": "fairseq_knnvc",
+      "accuracy": 88.2,
+      "roc_auc": 94.64800000000001,
+      "eer": 10.799999999999999
+    },
+    {
+      "held_out_attack": "fairseq_freevc",
+      "accuracy": 88.5,
+      "roc_auc": 94.9264,
+      "eer": 10.799999999999999
+    },
+    {
+      "held_out_attack": "vits_freevc",
+      "accuracy": 89.8,
+      "roc_auc": 95.1052,
+      "eer": 10.299999999999997
+    },
+    {
+      "held_out_attack": "bark+freevc",
+      "accuracy": 84.5,
+      "roc_auc": 92.42239999999998,
+      "eer": 13.900000000000002
+    },
+    {
+      "held_out_attack": "vallex",
+      "accuracy": 45.0,
+      "roc_auc": 30.192399999999996,
+      "eer": 63.800000000000004
+    }
+  ],
+  "exp4_cross_lingual_matrix": {
+    "languages": [
+      "en",
+      "ru",
+      "ar",
+      "de",
+      "es",
+      "ro",
+      "zh"
+    ],
+    "matrix": [
+      [
+        91.60000000000001,
+        84.7,
+        77.0,
+        89.2,
+        82.5,
+        84.7,
+        79.4
+      ],
+      [
+        86.0,
+        91.7,
+        74.1,
+        87.4,
+        81.89999999999999,
+        80.9,
+        76.9
+      ],
+      [
+        84.0,
+        76.3,
+        94.89999999999999,
+        78.60000000000001,
+        78.7,
+        90.5,
+        81.3
+      ],
+      [
+        86.8,
+        83.6,
+        76.7,
+        93.2,
+        83.39999999999999,
+        80.4,
+        78.4
+      ],
+      [
+        88.8,
+        82.8,
+        80.7,
+        88.9,
+        88.6,
+        84.5,
+        80.30000000000001
+      ],
+      [
+        71.1,
+        62.2,
+        80.80000000000001,
+        60.699999999999996,
+        64.2,
+        98.4,
+        81.2
+      ],
+      [
+        79.80000000000001,
+        70.3,
+        81.3,
+        75.2,
+        73.4,
+        92.0,
+        90.10000000000001
+      ]
+    ]
+  },
+  "exp5_sample_decay": [
+    {
+      "samples_per_class": 10000,
+      "total_train_samples": 20000,
+      "accuracy": 90.01,
+      "roc_auc": 95.76042399999999,
+      "eer": 9.97
+    },
+    {
+      "samples_per_class": 5000,
+      "total_train_samples": 10000,
+      "accuracy": 89.24,
+      "roc_auc": 95.301684,
+      "eer": 10.650000000000002
+    },
+    {
+      "samples_per_class": 2000,
+      "total_train_samples": 4000,
+      "accuracy": 88.37,
+      "roc_auc": 94.42144,
+      "eer": 11.729999999999999
+    },
+    {
+      "samples_per_class": 1000,
+      "total_train_samples": 2000,
+      "accuracy": 86.88,
+      "roc_auc": 93.177836,
+      "eer": 13.260000000000002
+    },
+    {
+      "samples_per_class": 500,
+      "total_train_samples": 1000,
+      "accuracy": 85.26,
+      "roc_auc": 91.727856,
+      "eer": 14.780000000000001
+    },
+    {
+      "samples_per_class": 200,
+      "total_train_samples": 400,
+      "accuracy": 80.17999999999999,
+      "roc_auc": 87.977636,
+      "eer": 19.620000000000005
+    },
+    {
+      "samples_per_class": 100,
+      "total_train_samples": 200,
+      "accuracy": 78.06,
+      "roc_auc": 85.30764799999999,
+      "eer": 22.140000000000004
+    },
+    {
+      "samples_per_class": 50,
+      "total_train_samples": 100,
+      "accuracy": 74.88,
+      "roc_auc": 82.58012000000001,
+      "eer": 25.080000000000002
+    },
+    {
+      "samples_per_class": 20,
+      "total_train_samples": 40,
+      "accuracy": 73.74000000000001,
+      "roc_auc": 80.77772399999999,
+      "eer": 26.449999999999996
+    },
+    {
+      "samples_per_class": 10,
+      "total_train_samples": 20,
+      "accuracy": 68.24,
+      "roc_auc": 74.735032,
+      "eer": 30.869999999999997
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Model,In-Domain ACC,In-Domain EER,Cross-Domain ACC,Cross-Domain EER
+Mantis v2 + MetricProbe (Strategy 1),91.3,8.784999999999998,90.40811620936131,9.66105602951349
+Mantis v2 Baseline (Linear Probe),89.27,10.87,91.42,8.67
+wav2vec 2.0 (Leader),99.97,0.01,89.07,11.82
+ResNet-18,99.98,0.01,87.87,12.52
+AST,98.53,1.35,81.61,16.91
+SepTr,91.7,22.05,72.67,45.69

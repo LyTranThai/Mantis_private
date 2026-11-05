@@ -1,0 +1,47 @@
+[
+  {
+    "samples_per_class": 105,
+    "total_train_samples": 210,
+    "test_samples": 300,
+    "accuracy": 0.8433333333333334,
+    "roc_auc": 0.9569333333333333,
+    "eer": 0.12,
+    "threshold": 0.07840113190185327
+  },
+  {
+    "samples_per_class": 100,
+    "total_train_samples": 200,
+    "test_samples": 300,
+    "accuracy": 0.8466666666666667,
+    "roc_auc": 0.9567111111111112,
+    "eer": 0.11666666666666667,
+    "threshold": 0.12112439718233865
+  },
+  {
+    "samples_per_class": 50,
+    "total_train_samples": 100,
+    "test_samples": 300,
+    "accuracy": 0.8166666666666667,
+    "roc_auc": 0.9406666666666665,
+    "eer": 0.14,
+    "threshold": 0.2855603142543623
+  },
+  {
+    "samples_per_class": 25,
+    "total_train_samples": 50,
+    "test_samples": 300,
+    "accuracy": 0.8766666666666667,
+    "roc_auc": 0.9502666666666666,
+    "eer": 0.13666666666666666,
+    "threshold": 0.6113969983245942
+  },
+  {
+    "samples_per_class": 10,
+    "total_train_samples": 20,
+    "test_samples": 300,
+    "accuracy": 0.83,
+    "roc_auc": 0.9064444444444445,
+    "eer": 0.15666666666666662,
+    "threshold": 0.7319551806753725
+  }
+]
